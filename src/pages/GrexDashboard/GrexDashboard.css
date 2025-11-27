@@ -1,0 +1,30 @@
+.grex-dashboard-layout {
+    display: flex;
+    gap: 1.5rem; /* Adds space between charts and chat */
+}
+
+.charts-area {
+    flex: 1;
+    min-width: 0; /* Important for flex-shrink to work correctly */
+    transition: width 0.3s ease-in-out;
+}
+
+.chat-sidebar-wrapper {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    height: 100%;
+}
+
+.chat-sidebar-wrapper.open {
+    width: 320px; /* Adjust the width of the sidebar as needed */
+}
+
+.chat-sidebar-inner {
+    width: 320px; /* Must match the .open width */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e9e9ef;
+    background-color: #fff;
+}
