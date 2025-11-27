@@ -248,6 +248,9 @@ import BlogListView from "../pages/Pages/Blogs/ListView";
 import BlogGridView from "../pages/Pages/Blogs/GridView";
 import PageBlogOverview from "../pages/Pages/Blogs/Overview";
 
+//Grex
+import EchartsGrex from "../pages/GrexDashboard/index";
+
 const authProtectedRoutes = [
   { path: "/dashboard-analytics", component: <DashboardAnalytics /> },
   { path: "/dashboard-crm", component: <DashboardCrm /> },
@@ -258,6 +261,8 @@ const authProtectedRoutes = [
   { path: "/dashboard-nft", component: <DashboardNFT /> },
   { path: "/dashboard-job", component: <DashboardJob /> },
   { path: "/dashboard-blog", component: <DashboardBlog /> },
+
+  { path: "/grex-dashboard", component: <EchartsGrex /> },
 
   { path: "/apps-calendar", component: <Calendar /> },
   { path: "/apps-calendar-month-grid", component: <MonthGrid /> },
