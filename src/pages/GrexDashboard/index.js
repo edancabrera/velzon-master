@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardHeader, Col, Container, Row } from 'reactstrap';
-import BreadCrumb from '../../../Components/Common/BreadCrumb';
+import BreadCrumb from '../../Components/Common/BreadCrumb';
 import {LineChart,StackedLineChart,AreaChart,StackedAreaChart,StepLineChart,LineYChart,BasicBarChart,
         BarLabelChart,HorizontalBarChart,StackedHorizontalBarChart,PieChart,DoughnutChart,BasicScatterChart,
         CandleStickChart,GraphChart,TreemapChart,SunburstChart,ParallelChart,SankeyChart,FunnelChart,GaugeChart,HeatmapChart

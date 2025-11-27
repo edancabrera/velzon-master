@@ -678,7 +678,7 @@ const Navdata = () => {
         {
           id: "grex-dashboard",
           label: "Dashboard",
-          link: "/dashboard-analytics",
+          link: "/grex-dashboard",
           parentId: "grex-components",
         },
       ],
