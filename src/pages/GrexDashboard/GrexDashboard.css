@@ -1,30 +1,46 @@
 .grex-dashboard-layout {
-    display: flex;
-    gap: 1.5rem; /* Adds space between charts and chat */
+  display: flex;
+  gap: 1.5rem; /* Adds space between charts and chat */
 }
 
 .charts-area {
-    flex: 1;
-    min-width: 0; /* Important for flex-shrink to work correctly */
-    transition: width 0.3s ease-in-out;
+  flex: 1;
+  min-width: 0; /* Important for flex-shrink to work correctly */
+  transition: width 0.3s ease-in-out;
 }
 
 .chat-sidebar-wrapper {
-    width: 0;
-    overflow: hidden;
-    transition: width 0.3s ease-in-out;
-    height: 100%;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  height: 100%;
 }
 
 .chat-sidebar-wrapper.open {
-    width: 320px; /* Adjust the width of the sidebar as needed */
+  width: 320px; /* Adjust the width of the sidebar as needed */
 }
 
 .chat-sidebar-inner {
-    width: 320px; /* Must match the .open width */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border-left: 1px solid #e9e9ef;
-    background-color: #fff;
+  width: 320px; /* Must match the .open width */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #e9e9ef;
+  background-color: #fff;
+}
+
+/* Floating Action Button for Chat */
+.chat-fab {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  font-size: 24px; /* Makes the icon larger */
 }

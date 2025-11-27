@@ -47,9 +47,6 @@ const EchartsGrex = () => {
             <Container fluid>
                 
                 <BreadCrumb title="E Charts" pageTitle="Charts" />
-                <Button color="primary" onClick={toggleChat} className="mb-4">
-                    {isChatOpen ? 'Cerrar Chat' : 'Abrir Chat'}
-                </Button>
 
                 <div className="grex-dashboard-layout">
                     <div className="charts-area">
@@ -323,6 +320,10 @@ const EchartsGrex = () => {
 
                 </div>
             </Container>
+
+            <Button color="primary" onClick={toggleChat} className="chat-fab">
+                {isChatOpen ? <i className="ri-close-line"></i> : <i className="ri-chat-3-line"></i>}
+            </Button>
 
         </div>
     )
