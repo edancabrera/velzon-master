@@ -17,6 +17,9 @@ const Navdata = () => {
   const [isMaps, setIsMaps] = useState(false);
   const [isMultiLevel, setIsMultiLevel] = useState(false);
 
+  const [isGrex, setIsGrex] = useState(false);
+
+
   //Calender
   const [isCalender, setCalender] = useState(false);
 
@@ -118,6 +121,9 @@ const Navdata = () => {
     }
     if (iscurrentState !== "Landing") {
       setIsLanding(false);
+    }
+    if (iscurrentState !== "Grex Components") {
+      setIsGrex(false);
     }
   }, [
     history,
@@ -649,6 +655,31 @@ const Navdata = () => {
           parentId: "apps",
           // badgeName: "New",
           // badgeColor: "success"
+        },
+      ],
+    },
+    {
+      label: "Grex",
+      isHeader: true,
+    },
+    {
+      id: "grex-components",
+      label: "Grex Components",
+      icon: "ri-dashboard-2-line",
+      link: "/#",
+      stateVariables: isGrex,
+      click: function (e) {
+        e.preventDefault();
+        setIsGrex(!isGrex);
+        setIscurrentState("Grex Components");
+        updateIconSidebar(e);
+      },
+      subItems: [
+        {
+          id: "analytics",
+          label: "Analytics",
+          link: "/dashboard-analytics",
+          parentId: "grex-components",
         },
       ],
     },
