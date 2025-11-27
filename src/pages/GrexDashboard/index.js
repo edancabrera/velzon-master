@@ -1,19 +1,33 @@
-import React from 'react';
-import { Card, CardBody, CardHeader, Col, Container, Row } from 'reactstrap';
+import React, { useState } from 'react';
+import { Card, CardBody, CardHeader, Col, Container, Row, Button } from 'reactstrap';
 import BreadCrumb from '../../Components/Common/BreadCrumb';
+import ChatSidebar from './ChatSidebar'; // Import the new component
 import {LineChart,StackedLineChart,AreaChart,StackedAreaChart,StepLineChart,LineYChart,BasicBarChart,
         BarLabelChart,HorizontalBarChart,StackedHorizontalBarChart,PieChart,DoughnutChart,BasicScatterChart,
         CandleStickChart,GraphChart,TreemapChart,SunburstChart,ParallelChart,SankeyChart,FunnelChart,GaugeChart,HeatmapChart
         } from './ECharts'
 
-        
-        const EchartsGrex = () => {
+
+const EchartsGrex = () => {
     document.title="E Charts| Velzon - React Admin & Dashboard Template";
+
+    const [isChatOpen, setIsChatOpen] = useState(false);
+
+    const toggleChat = () => {
+        setIsChatOpen(!isChatOpen);
+    };
+
     return (
         <div className="page-content">
             <Container fluid>
                 
                 <BreadCrumb title="E Charts" pageTitle="Charts" />
+                <Button color="primary" onClick={toggleChat} className="mb-4">
+                    Abrir Chat
+                </Button>
+
+                <ChatSidebar isOpen={isChatOpen} toggle={toggleChat} />
+
                 <Row>
                     <Col xl={6}>
                         <Card>
@@ -284,4 +298,4 @@ import {LineChart,StackedLineChart,AreaChart,StackedAreaChart,StepLineChart,Line
     )
 }
 
-export default EchartsGrex
+export default EchartsGrex;
