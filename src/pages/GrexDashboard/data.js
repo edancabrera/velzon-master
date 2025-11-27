@@ -1,0 +1,60 @@
+export const grexWidgets = [
+    {
+        id: 1,
+        label: "Documentos Totales",
+        badge: "ri-arrow-right-up-line",
+        badgeClass: "success",
+        percentage: "16.24",
+        counter: "559.25",
+        link: "Ver todos",
+        prefix: "",
+        suffix: "k",
+        decimals: 2,
+        separator: ",",
+        icon: "ri-briefcase-4-line",
+        bgcolor: "primary"
+    },
+    {
+        id: 2,
+        label: "Usuarios Activos",
+        badge: "ri-arrow-right-down-line",
+        badgeClass: "danger",
+        percentage: "3.96",
+        counter: "36894",
+        link: "Ver detalles",
+        prefix: "",
+        suffix: "",
+        separator: ",",
+        icon: "ri-user-3-line",
+        bgcolor: "info"
+    },
+    {
+        id: 3,
+        label: "Ingresos",
+        badge: "ri-arrow-right-up-line",
+        badgeClass: "success",
+        percentage: "6.98",
+        counter: "165.89",
+        link: "Ver ingresos netos",
+        prefix: "$",
+        suffix: "k",
+        decimals: 2,
+        separator: ",",
+        icon: "ri-money-dollar-circle-line",
+        bgcolor: "success"
+    },
+    {
+        id: 4,
+        label: "Proyectos Pendientes",
+        badge: "ri-arrow-right-down-line",
+        badgeClass: "warning",
+        percentage: "0.5",
+        counter: "18",
+        link: "Ver proyectos",
+        prefix: "",
+        suffix: "",
+        separator: ",",
+        icon: "ri-folder-2-line",
+        bgcolor: "warning"
+    }
+];
